@@ -1,0 +1,26 @@
+{
+  "name": "TopROI",
+  "version": "1.0.0",
+  "description": "Тестовое задание в TopROI",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build",
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "Flame",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.13",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify-es": "^2.0.0",
+    "prettier": "2.8.8",
+    "sass": "^1.58.0",
+    "gh-pages": "^4.0.0"
+  }
+}
