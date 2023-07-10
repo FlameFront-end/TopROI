@@ -19,3 +19,33 @@
     line-height: 140%;
   }
 }
+
+
+@media screen and (max-width: 990px) {
+  .nav {
+    padding: 16px;
+  }
+
+  .nav__list {
+    display: none;
+  }
+
+  .nav__list-item-button {
+    display: none;
+  }
+
+  .nav__tel {
+    display: none;
+  }
+
+  .nav__logo {
+    max-width: 160px;
+  }
+
+  .nav__menu-toggle {
+    display: block;
+    font-size: 20px;
+    color: #0218A5;
+    cursor: pointer;
+  }
+}
