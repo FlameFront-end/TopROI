@@ -6,12 +6,12 @@
   margin-top: 24px;
   border-radius: 16px;
   background: #E8E9F2;
-  &__logo {
-  }
+
   &__list {
     display: flex;
     gap: 48px;
   }
+
   &__tel {
     color: #0218A5;
     font-size: 18px;
@@ -21,7 +21,7 @@
 }
 
 
-@media screen and (max-width: 990px) {
+@media screen and (width <= 990px) {
   .nav {
     padding: 16px;
   }

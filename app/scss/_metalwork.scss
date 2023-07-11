@@ -1,0 +1,22 @@
+.metalwork {
+  padding-top: 24px;
+  margin-bottom: 32px;
+  &__text {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    text-align: end;
+  }
+  &__text-header {
+    font-family: Montserrat, sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 130%;
+  }
+  &__text-header-span--blue {
+    color: #001CD2;
+  }
+  &__img {
+    border-radius: 24px;
+  }
+}

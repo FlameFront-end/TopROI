@@ -1,5 +1,6 @@
 .header {
   font-family: Montserrat, sans-serif;
+
   &__title {
     display: flex;
     flex-direction: column;
@@ -9,20 +10,24 @@
     font-weight: 600;
     line-height: 100%;
   }
+
   &__title-row {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 24px
   }
+
   &__span-blue {
     color: #0318A5;
   }
+
   &__contact {
     display: flex;
     justify-content: center;
     gap: 32px;
     margin: 80px 0;
+
     &-text {
       max-width: 427px;
       text-align: right;
@@ -31,19 +36,23 @@
       line-height: 32px;
     }
   }
+
   &__history {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 120px;
   }
+
   &__history-item {
     max-width: 236px;
+
     &__quantity{
       font-size: 24px;
       font-weight: 600;
       line-height: 32px;
     }
+
     &__title {
       font-size: 16px;
       font-weight: 400;
@@ -53,7 +62,7 @@
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (width <= 768px) {
   .header__title {
     font-size: 24px;
     text-align: center;
@@ -77,18 +86,19 @@
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (width <= 400px) {
   .header__title {
     font-size: 20px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (width <= 768px) {
   .header__contact {
     &-text {
       max-width: 100%;
       text-align: center;
     }
+
     &-btn {
       margin-top: 20px;
     }
@@ -96,14 +106,14 @@
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (width <= 768px) {
   .header__history-item {
     max-width: 100%;
     margin-bottom: 20px;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (width <= 480px) {
   .header__history-item__quantity {
     font-size: 20px;
     line-height: 28px;

@@ -1,0 +1,30 @@
+.company-info {
+  font-family: Montserrat, sans-serif;
+  margin-bottom: 40px;
+  &__text-top {
+    margin-bottom: 147px;
+  }
+  &__text-paragraph {
+    max-width: 573px;
+    margin-bottom: 24px;
+    font-size: 18px;
+    line-height: 32px;
+  }
+  &__text-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 551px;
+  }
+  &__text-subheading {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  &__text-heading {
+    color: #282828;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 130%;
+  }
+}

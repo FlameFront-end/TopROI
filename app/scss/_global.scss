@@ -16,3 +16,18 @@
   background: #000;
   color: #FFF;
 }
+
+.block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.block__child {
+  width: calc(50% - 16px);
+}
+
+.main {
+  background-color: #E8E9F2;
+}
+
+
