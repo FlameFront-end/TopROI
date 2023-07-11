@@ -4,6 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TopROI</title>
+    <meta name="description" content="Тестовое задание в TopROI"/>
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -82,9 +83,9 @@
                 <h3 class="header__contact-text">
                     Создаем опоры ЛЭП, которые выдерживают испытание временем
                 </h3>
-                <button class="header__contact-btn btn">
+                <a class="header__contact-btn btn" href="#contact">
                     Связаться с нами
-                </button>
+                </a>
             </div>
             <div class="header__history">
                 <div class="header__history-item">
@@ -147,6 +148,7 @@
                 <div class="our-objects__text block__child">
                     <h3 class="our-objects__text-subheading">Наши объекты</h3>
                     <h2 class="our-objects__text-heading heading">Металлоконструкции <br> ЛЭП высокого <br> напряжения</h2>
+                    <span class="our-objects__text-construction">Строительство заходов КВЛ 220 кВ Нерюнгринская ГРЭС</span>
                 </div>
                 <div class="our-objects__slider block__child swiper mySwiper">
                     <div class="swiper-wrapper">
@@ -156,7 +158,20 @@
                         <img class="swiper-slide our-objects__slider-img" alt="slider img 4" src="./images/slider/slider-img-4.jpg">
                         <img class="swiper-slide our-objects__slider-img" alt="slider img 5" src="./images/slider/slider-img-5.jpg">
                     </div>
+                    <button class="swiper-button-next swiper-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="57" viewBox="0 0 56 57" fill="none">
+                            <rect y="0.0351562" width="56" height="56" rx="28" fill="white"/>
+                            <path d="M17.0041 28.5353L38.9977 28.5351M38.9977 28.5351L32.8884 22.4258M38.9977 28.5351L33.1938 34.339" stroke="black"/>
+                        </svg>
+                    </button>
+                    <button class="swiper-button-prev swiper-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="57" viewBox="0 0 56 57" fill="none">
+                            <rect x="56" y="56.0352" width="56" height="56" rx="28" transform="rotate(180 56 56.0352)" fill="white" fill-opacity="0.4"/>
+                            <path d="M38.9959 27.5351L17.0023 27.5352M17.0023 27.5352L23.1116 33.6445M17.0023 27.5352L22.8062 21.7313" stroke="black"/>
+                        </svg>
+                    </button>
                 </div>
+
             </section>
         </div>
     </div>
@@ -180,7 +195,7 @@
         </marquee>
     </div>
     <div class="container">
-        <section class="contact block">
+        <section class="contact block" id="contact">
             <div class="contact__form block__child">
                 <h2 class="contact__form-heading heading">
                     <span class="contact__form-heading__span">Оставьте заявку</span>
@@ -210,12 +225,12 @@
 <div class="container">
     <footer class="footer">
         <span class="footer__copyright">© РОСЖБК 2023 г</span>
-        <div class="footer__development">
+        <a class="footer__development" href="https://toproi.ru" target="_blank">
             <span class="footer__development-text">Творческая искра TopROI</span>
             <svg class="footer__development-img" xmlns="http://www.w3.org/2000/svg" width="41" height="17" viewBox="0 0 41 17" fill="none">
                 <path d="M12.7881 13.9745L8.13788 9.36849L3.48766 13.9745L0 10.52L8.13788 2.4594L16.2758 10.52L12.7881 13.9745ZM28.7 3.46373L24.1279 8.03516L28.7 12.6066L25.2709 16.0352L17.2697 8.03516L25.2709 0.0351562L28.7 3.46373ZM36.0303 13.0049C33.2856 13.0049 31.0606 10.8341 31.0606 8.15637C31.0606 5.47862 33.2856 3.30788 36.0303 3.30788C38.775 3.30788 41 5.47862 41 8.15637C41 10.8341 38.775 13.0049 36.0303 13.0049Z" fill="#141414"/>
             </svg>
-        </div>
+        </a>
     </footer>
 </div>
 <div class="overlay"></div>
