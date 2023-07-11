@@ -1,0 +1,23 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $gray;
+  border-radius: $border-radius;
+  padding: 24px;
+  margin-bottom: 16px;
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  @include adaptiv-font(18, 14);
+  .footer__development {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 580px) {
+  .footer {
+    flex-direction: column;
+  }
+}

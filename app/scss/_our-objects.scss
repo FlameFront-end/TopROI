@@ -1,0 +1,36 @@
+.our-objects {
+  padding-bottom: 24px;
+  &__text {
+    display: flex;
+    text-align: right;
+    flex-direction: column;
+    align-items: end;
+    border-radius: 24px;
+    padding: 40px 40px;
+    font-family: Montserrat, sans-serif;
+    background: #0218A5;
+    color: #FFF;
+    &-heading {
+      max-width: 629px;
+      margin-top: 24px;
+      margin-bottom: 40px;
+      font-size: 40px;
+      font-weight: 600;
+      line-height: 130%;
+    }
+    &-construction {
+      max-width: 460px;
+      font-size: 18px;
+      line-height: 32px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .our-objects {
+    &__text {
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

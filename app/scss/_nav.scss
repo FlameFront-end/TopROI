@@ -5,15 +5,15 @@
   padding: 16px 27px;
   margin-top: 24px;
   border-radius: 16px;
-  background: #E8E9F2;
+  background: $gray;
 
   &__list {
     display: flex;
     gap: 48px;
   }
 
-  &__tel {
-    color: #0218A5;
+  &__tel-link {
+    color: $blue;
     font-size: 18px;
     font-weight: 600;
     line-height: 140%;
@@ -21,7 +21,7 @@
 }
 
 
-@media screen and (width <= 990px) {
+@media screen and (width <= 900px) {
   .nav {
     padding: 16px;
   }
@@ -34,7 +34,7 @@
     display: none;
   }
 
-  .nav__tel {
+  .nav__tel-link {
     display: none;
   }
 

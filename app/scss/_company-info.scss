@@ -7,7 +7,7 @@
   &__text-paragraph {
     max-width: 573px;
     margin-bottom: 24px;
-    font-size: 18px;
+    @include adaptiv-font(18, 14);
     line-height: 32px;
   }
   &__text-bottom {
@@ -17,14 +17,37 @@
     max-width: 551px;
   }
   &__text-subheading {
-    font-size: 16px;
+    @include adaptiv-font(16, 14);
     line-height: 24px;
+
   }
   &__text-heading {
     color: #282828;
     font-family: Inter, sans-serif;
+    @include adaptiv-font(24, 20);
     font-weight: 400;
-    font-size: 24px;
     line-height: 130%;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .company-info {
+    align-items: center;
+    flex-direction: column;
+    &__img {
+      margin: 20px 0;
+    }
+    &__text-top {
+      margin-bottom: 50px;
+      display: flex;
+      flex-direction: column;
+    }
+    &__text-bottom {
+      text-align: center;
+    }
+    &__text-btn {
+      margin: 0 auto;
+    }
   }
 }
