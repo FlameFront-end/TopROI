@@ -1,20 +1,46 @@
 <!doctype html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TopROI</title>
+    <meta name="description" content="Тестовое задание в TopROI"/>
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
 </head>
 <body>
+<div class="burger-menu">
+    <div class="burger-menu__wrapper">
+        <ul class="burger-menu__list">
+            <li class="burger-menu__list-item">
+                <a class="burger-menu__list-item-link" href="#">Компания</a>
+            </li>
+            <li class="burger-menu__list-item">
+                <a class="burger-menu__list-item-link" href="#">Продукция</a>
+            </li>
+            <li class="burger-menu__list-item">
+                <a class="burger-menu__list-item-link" href="#">Услуги</a>
+            </li>
+            <li class="burger-menu__list-item">
+                <button class="burger-menu__list-item-button">
+                    Еще
+                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="6" viewBox="0 0 11 6" fill="none">
+                        <path d="M1.5 1.53516L5.49987 4.53516L9.5 1.53516" stroke="black" stroke-width="2"/>
+                    </svg>
+                </button>
+            </li>
+            <li class="burger-menu__list-item">
+                <a class="burger-menu__tel-link" href="tel:+73774311323">+7 (377) 431-13-23</a>
+            </li>
+        </ul>
+    </div>
+</div>
 <div class="container">
     <nav class="nav">
-        <img class="nav__logo" src="./images/header/logo.png" alt="logo"/>
+        <img class="nav__logo" src="./images/header/logo.png" alt="logo">
         <ul class="nav__list">
             <li class="nav__list-item">
                 <a class="nav__list-item-link" href="#">Компания</a>
@@ -37,9 +63,12 @@
                 </button>
             </li>
         </ul>
-        <div class="nav__tel">
             <a class="nav__tel-link" href="tel:+73774311323">+7 (377) 431-13-23</a>
-        </div>
+        <button class="burger-logo">
+            <span class="burger-line burger-line__index"></span>
+            <span class="burger-line burger-line__index"></span>
+            <span class="burger-line burger-line__index"></span>
+        </button>
     </nav>
 </div>
 <header class="header">
@@ -48,15 +77,15 @@
             <div class="header__title">
                 <div class="header__title-row">ЗАВОД <img class="header__title-img" src="./images/header/header_1.png" alt="header_1"></div>
                 <div class="header__title-row"><img class="header__title-img" src="./images/header/header_2.png" alt="header_2"> ПО ПРОИЗВОДСТВУ</div>
-                <div class="header__title-row"> <span class="header__span-blue">МЕТАЛЛОКОНСТРУКЦИЙ</span><img class="header__title-img" src="./images/header/header_3.png" alt="header_3"></div>
+                <div class="header__title-row"><span class="header__span-blue">МЕТАЛЛОКОНСТРУКЦИЙ</span><img class="header__title-img" src="./images/header/header_3.png" alt="header_3"></div>
             </div>
             <div class="header__contact">
                 <h3 class="header__contact-text">
                     Создаем опоры ЛЭП, которые выдерживают испытание временем
                 </h3>
-                <button class="header__contact-btn btn">
+                <a class="header__contact-btn btn" href="#contact">
                     Связаться с нами
-                </button>
+                </a>
             </div>
             <div class="header__history">
                 <div class="header__history-item">
@@ -88,36 +117,124 @@
     </div>
 </header>
 <main class="main">
-    <div class="container">
-        <section class="block metalwork">
+    <div class="main__wrapper">
+        <div class="container">
+            <section class="block metalwork">
                 <div class="block__child metalwork__text">
-                    <h2 class="metalwork__text-header">
-                        <span class="metalwork__text-header-span--blue">РОС ЖБК</span><br>
+                    <h2 class="metalwork__text-heading heading">
+                        <span class="metalwork__text-heading-span--blue">РОС ЖБК</span><br>
                         металлоконструкции
                     </h2>
                 </div>
                 <img class="block__child metalwork__img" src="images/main/metalwork.jpg" alt="ЛЭП">
-        </section>
-        <section class="company-info block">
-            <img class="company-info__img block__child" src="./images/main/director.png" alt="Директор">
-            <div class="company-info__text block__child">
-                <div class="company-info__text-top">
-                    <p class="company-info__text-paragraph">
-                        В 2023 году исполняется пятнадцать лет! «РОС ЖБК» — ведущий производитель металлоконструкций опор ЛЭП, предоставляющий надежные решения для энергетической инфраструктуры. Мы специализируемся на производстве металлоконструкций опор ЛЭП от 35 до 750 кВ, металлоконструкций порталов ошиновки распределительных устройств ОРУ, ПС, прожекторных мачт (ПМС) и свайных фундаментов (ростверков).
-                    </p>
-                    <button class="company-info__text-btn btn">Подробнее</button>
+            </section>
+            <section class="company-info block">
+                <img class="company-info__img block__child" src="./images/main/director.png" alt="Директор">
+                <div class="company-info__text block__child">
+                    <div class="company-info__text-top">
+                        <p class="company-info__text-paragraph">
+                            В 2023 году исполняется пятнадцать лет! «РОС ЖБК» — ведущий производитель металлоконструкций опор ЛЭП, предоставляющий надежные решения для энергетической инфраструктуры. Мы специализируемся на производстве металлоконструкций опор ЛЭП от 35 до 750 кВ, металлоконструкций порталов ошиновки распределительных устройств ОРУ, ПС, прожекторных мачт (ПМС) и свайных фундаментов (ростверков).
+                        </p>
+                        <button class="company-info__text-btn btn">Подробнее</button>
+                    </div>
+                    <div class="company-info__text-bottom">
+                        <span class="company-info__text-subheading">Генеральный директор</span>
+                        <h3 class="company-info__text-heading">«Работа должна быть выполнена качественно, комплектно и в установленные сроки»</h3>
+                        <span class="company-info__text-subheading">Паволв Касим Сагидуллович, Генеральный директор</span>
+                    </div>
                 </div>
-                <div class="company-info__text-bottom">
-                    <span class="company-info__text-subheading">Генеральный директор</span>
-                    <h3 class="company-info__text-heading">«Работа должна быть выполнена качественно, комплектно и в установленные сроки»</h3>
-                    <span class="company-info__text-subheading">Паволв Касим Сагидуллович, Генеральный директор</span>
+            </section>
+            <section class="block our-objects">
+                <div class="our-objects__text block__child">
+                    <h3 class="our-objects__text-subheading">Наши объекты</h3>
+                    <h2 class="our-objects__text-heading heading">Металлоконструкции <br> ЛЭП высокого <br> напряжения</h2>
+                    <span class="our-objects__text-construction">Строительство заходов КВЛ 220 кВ Нерюнгринская ГРЭС</span>
                 </div>
+                <div class="our-objects__slider block__child swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <img class="swiper-slide our-objects__slider-img" alt="slider img 1" src="./images/slider/slider-img-1.jpg">
+                        <img class="swiper-slide our-objects__slider-img" alt="slider img 2" src="./images/slider/slider-img-2.jpg">
+                        <img class="swiper-slide our-objects__slider-img" alt="slider img 3" src="./images/slider/slider-img-3.jpg">
+                        <img class="swiper-slide our-objects__slider-img" alt="slider img 4" src="./images/slider/slider-img-4.jpg">
+                        <img class="swiper-slide our-objects__slider-img" alt="slider img 5" src="./images/slider/slider-img-5.jpg">
+                    </div>
+                    <button class="swiper-button-next swiper-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="57" viewBox="0 0 56 57" fill="none">
+                            <rect y="0.0351562" width="56" height="56" rx="28" fill="white"/>
+                            <path d="M17.0041 28.5353L38.9977 28.5351M38.9977 28.5351L32.8884 22.4258M38.9977 28.5351L33.1938 34.339" stroke="black"/>
+                        </svg>
+                    </button>
+                    <button class="swiper-button-prev swiper-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="57" viewBox="0 0 56 57" fill="none">
+                            <rect x="56" y="56.0352" width="56" height="56" rx="28" transform="rotate(180 56 56.0352)" fill="white" fill-opacity="0.4"/>
+                            <path d="M38.9959 27.5351L17.0023 27.5352M17.0023 27.5352L23.1116 33.6445M17.0023 27.5352L22.8062 21.7313" stroke="black"/>
+                        </svg>
+                    </button>
+                </div>
+
+            </section>
+        </div>
+    </div>
+    <div class="marquee">
+        <marquee behavior="scroll" scrollamount="20" loop="-1" direction="alternate" >
+            опора ЛЭП <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+            <circle cx="10.7373" cy="11.0352" r="10.7373" fill="#E8E9F2"/>
+        </svg> металлоконструкций <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+            <circle cx="10.7373" cy="11.0352" r="10.7373" fill="#E8E9F2"/></svg>
+            опора ЛЭП <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+            <circle cx="10.7373" cy="11.0352" r="10.7373" fill="#E8E9F2"/>
+        </svg> металлоконструкций <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+            <circle cx="10.7373" cy="11.0352" r="10.7373" fill="#E8E9F2"/></svg>
+            опора ЛЭП <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+            <circle cx="10.7373" cy="11.0352" r="10.7373" fill="#E8E9F2"/>
+        </svg> металлоконструкций <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+            <circle cx="10.7373" cy="11.0352" r="10.7373" fill="#E8E9F2"/></svg>
+            опора ЛЭП <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+            <circle cx="10.7373" cy="11.0352" r="10.7373" fill="#E8E9F2"/>
+        </svg> металлоконструкций
+        </marquee>
+    </div>
+    <div class="container">
+        <section class="contact block" id="contact">
+            <div class="contact__form block__child">
+                <h2 class="contact__form-heading heading">
+                    <span class="contact__form-heading__span">Оставьте заявку</span>
+                    для энергичного сотрудничества
+                </h2>
+                <form class="contact__form-body">
+                    <label class="contact__form-label">
+                        <input class="contact__form-input" type="text" name="name" placeholder="Имя или организация*" required>
+                    </label>
+                    <label class="contact__form-label">
+                        <input class="contact__form-input" type="email" name="email" placeholder="Почта*" required>
+                    </label>
+                    <label class="contact__form-label">
+                        <input class="contact__form-input" type="tel" name="phone" placeholder="Телефон*" required>
+                    </label>
+                    <button class="contact__form-btn btn">Отправить</button>
+                    <div class="contact__form-confidentiality">
+                        Нажимая кнопку, вы принимаете <a href="#">пользовательское соглашение </a>
+                        и <a href="#">политику конфиденциальности</a>
+                    </div>
+                </form>
             </div>
+            <img class="contact__img block__child" src="./images/contact/contact.jpg" alt="contact img">
         </section>
-    <section class="block"></section>
     </div>
 </main>
-
+<div class="container">
+    <footer class="footer">
+        <span class="footer__copyright">© РОСЖБК 2023 г</span>
+        <a class="footer__development" href="https://toproi.ru" target="_blank">
+            <span class="footer__development-text">Творческая искра TopROI</span>
+            <svg class="footer__development-img" xmlns="http://www.w3.org/2000/svg" width="41" height="17" viewBox="0 0 41 17" fill="none">
+                <path d="M12.7881 13.9745L8.13788 9.36849L3.48766 13.9745L0 10.52L8.13788 2.4594L16.2758 10.52L12.7881 13.9745ZM28.7 3.46373L24.1279 8.03516L28.7 12.6066L25.2709 16.0352L17.2697 8.03516L25.2709 0.0351562L28.7 3.46373ZM36.0303 13.0049C33.2856 13.0049 31.0606 10.8341 31.0606 8.15637C31.0606 5.47862 33.2856 3.30788 36.0303 3.30788C38.775 3.30788 41 5.47862 41 8.15637C41 10.8341 38.775 13.0049 36.0303 13.0049Z" fill="#141414"/>
+            </svg>
+        </a>
+    </footer>
+</div>
+<div class="overlay"></div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script src="js/main.min.js"></script>
 </body>
 </html>
