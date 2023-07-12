@@ -9,11 +9,11 @@
   font-weight: 600;
   line-height: 130%;
   text-transform: uppercase;
-}
-.marquee p {
-  display: inline-block;
-  padding-left: 100%;
-  animation: marquee 15s linear infinite;
+  &__paragraph {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 15s linear infinite;
+  }
 }
 
 @keyframes marquee {
