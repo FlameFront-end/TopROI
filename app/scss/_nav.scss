@@ -6,42 +6,47 @@
   margin-top: 24px;
   border-radius: 16px;
   background: $gray;
-
   &__list {
     display: flex;
     gap: 48px;
   }
-
   &__tel-link {
     color: $blue;
+    font-family: Montserrat, sans-serif;
     font-size: 18px;
     font-weight: 600;
     line-height: 140%;
   }
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  &__logo-text {
+    color: #0218A5;
+    font-family: RodchenkoCTT, sans-serif;
+    font-size: 33px;
+    line-height: 43px;
+    letter-spacing: 1.3px;
+    &__span {
+      color: #e83b2f;
+    }
+  }
 }
 
-
-@media screen and (width <= 900px) {
+@media screen and (width <= 930px) {
   .nav {
     padding: 16px;
   }
-
   .nav__list {
     display: none;
   }
-
   .nav__list-item-button {
     display: none;
   }
-
   .nav__tel-link {
     display: none;
   }
-
-  .nav__logo {
-    max-width: 160px;
-  }
-
   .nav__menu-toggle {
     display: block;
     font-size: 20px;
