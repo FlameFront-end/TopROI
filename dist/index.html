@@ -4,11 +4,12 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TopROI</title>
-    <meta name="description" content="Тестовое задание в TopROI"/>
+    <meta name="description" content="Тестовое задание в TopROI">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://allfont.ru/allfont.css?fonts=rodchenkoctt" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
 </head>
 <body>
@@ -40,7 +41,10 @@
 </div>
 <div class="container">
     <nav class="nav">
-        <img class="nav__logo" src="./images/header/logo.png" alt="logo">
+        <div class="nav__logo">
+            <img class="nav__logo-img" src="./images/header/logo.svg" alt="logo">
+            <h3 class="nav__logo-text">РОС<span class="nav__logo-text__span">ЖБК</span></h3>
+        </div>
         <ul class="nav__list">
             <li class="nav__list-item">
                 <a class="nav__list-item-link" href="#">Компания</a>
@@ -171,12 +175,11 @@
                         </svg>
                     </button>
                 </div>
-
             </section>
         </div>
     </div>
     <div class="marquee">
-        <marquee behavior="scroll" scrollamount="20" loop="-1" direction="alternate" >
+        <p>
             опора ЛЭП <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
             <circle cx="10.7373" cy="11.0352" r="10.7373" fill="#E8E9F2"/>
         </svg> металлоконструкций <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
@@ -192,7 +195,7 @@
             опора ЛЭП <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
             <circle cx="10.7373" cy="11.0352" r="10.7373" fill="#E8E9F2"/>
         </svg> металлоконструкций
-        </marquee>
+        </p>
     </div>
     <div class="container">
         <section class="contact block" id="contact">

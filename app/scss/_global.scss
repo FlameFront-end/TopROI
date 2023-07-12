@@ -1,3 +1,4 @@
+
 * {
   scroll-behavior: smooth;
 }
@@ -66,18 +67,6 @@
   .block__child {
     width: 100%;
   }
-}
-
-.marquee {
-  padding: 40px 0;
-  overflow: hidden;
-  color: $gray;
-  background: #FFF;
-  font-family: Montserrat, sans-serif;
-  font-size: 40px;
-  font-weight: 600;
-  line-height: 130%;
-  text-transform: uppercase;
 }
 
 @media (max-width: 767px) {
